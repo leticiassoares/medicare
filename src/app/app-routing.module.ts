@@ -10,9 +10,9 @@ const routes: Routes = [
       import('./modules/home/home.module').then((m) => m.HomeModule),
   },
   {
-    path: 'contato',
+    path: 'contact',
     loadChildren: () =>
-      import('./modules/contato/contato.module').then((m) => m.ContatoModule),
+      import('./modules/contact/contact.module').then((m) => m.ContactModule),
   },
   {
     path: 'login',
@@ -20,9 +20,9 @@ const routes: Routes = [
       import('./modules/login/login.module').then((m) => m.LoginModule),
   },
   {
-    path: 'cursos',
+    path: 'courses',
     loadChildren: () =>
-      import('./modules/cursos/cursos.module').then((m) => m.CursosModule),
+      import('./modules/courses/courses.module').then((m) => m.CoursesModule),
   },
 ];
 

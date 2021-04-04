@@ -1,0 +1,11 @@
+h3 {
+  margin-bottom: 1.5rem;
+
+  &:not(:first-child) {
+    margin-top: 2rem;
+  }
+}
+
+.l-btn {
+  margin-top: 2rem;
+}

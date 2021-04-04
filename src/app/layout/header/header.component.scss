@@ -1,5 +1,5 @@
 header {
-  background-color: #3f51b5;
+  background-color: var(--primary);
 
   .l-container {
     max-width: 1140px;
@@ -9,9 +9,9 @@ header {
     .l-container__logo {
       h1 {
         font-size: 36px;
-        color: #f1f4f8;
+        color: var(--light-grey);
         text-transform: uppercase;
-        border: #f1f4f8 2px solid;
+        border: var(--light-grey) 2px solid;
         padding: 1rem;
       }
 

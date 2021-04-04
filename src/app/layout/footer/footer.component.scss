@@ -1,29 +1,25 @@
 footer {
-  background-color: #3f51b5;
+  background-color: var(--primary);
 
-  .l-container {
-    max-width: 1140px;
-    padding: 8rem 0;
-    margin: 0 auto;
+  .l-container__info {
+    font-size: 24px;
+  }
+  .l-container__social {
+    ul {
+      display: inline-flex;
 
-    .l-container__info {
-      font-size: 24px;
-    }
-    .l-container__social {
-      ul {
-        display: inline-flex;
-
-        li:not(:last-child) {
-          margin-right: 3rem;
-        }
-      }
-    }
-
-    a {
-      color: black;
-      a:hover {
-        color: #dadce0;
+      li:not(:last-child) {
+        margin-right: 3rem;
       }
     }
   }
+
+  a {
+    color: var(--black);
+  }
+
+  a:hover {
+    color: var(--blacker);
+  }
 }
+

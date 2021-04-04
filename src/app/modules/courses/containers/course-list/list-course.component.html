@@ -1,0 +1,45 @@
+<div class="l-container">
+  <div class="p-d-flex p-grid">
+    <p-card
+      [header]="course.name"
+      class="p-d-inline p-col-4 p-card-shadow"
+      *ngFor="let course of courses"
+    >
+      <!-- <ng-template pTemplate="header">
+            <img alt="Card" src="assets/showcase/images/usercard.png">
+        </ng-template> -->
+      <p>{{ course.description }}</p>
+
+      
+      <ng-template
+        class="p-d-flex p-jc-center"
+        pTemplate="footer"
+      >
+        <a routerLink="{{ course.id }}/info"
+          ><button
+            pButton
+            pRipple
+            icon="pi pi-eye"
+            class="p-button-rounded"
+          ></button
+        ></a>
+        <!-- <a routerLink="editar/{{ course.id }}"
+          ><button
+            pButton
+            pRipple
+            icon="pi pi-pencil"
+            class="p-button-rounded"
+          ></button
+        ></a>
+        <a routerLink="deletar/{{ course.id }}"
+          ><button
+            pButton
+            pRipple
+            icon="pi pi-trash"
+            class="p-button-rounded"
+          ></button
+        ></a> -->
+      </ng-template>
+    </p-card>
+  </div>
+</div>
